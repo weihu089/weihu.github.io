@@ -369,20 +369,23 @@ p.en {
 /* ==================================================
    BADGES (FIXED BOOTSTRAP CONFLICT)
 ================================================== */
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px; /* 比 margin-right 更乾淨 */
+  margin-top: var(--s3);
+}
+
 .badge {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   padding: 6px 12px;
   border-radius: 999px;
   font-size: 14px;
-  margin-right: 5px;
   background: #99c0a9;
   color: #343333;
   border: 1px solid rgba(110, 127, 106, 0.25);
   transition: var(--ease);
-}
-
-.badges {
-  margin-top: var(--s3);
 }
 
 .badges .badge {
