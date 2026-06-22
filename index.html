@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="胡振惟的個人網站，展示專案、技能與學習歷程">
+  <title>Zhen-Wei Hu (胡振惟)</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Serif+TC:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= NAV ================= -->
+  <nav class="navbar navbar-expand-lg fixed-top glass-nav shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#" style="font-family: 'Inter', 'Noto Serif TC', sans-serif;">WeiHu
+        Portfolio</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about" aria-label="前往關於我區塊">關於我</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">教育背景</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">實務經驗</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">專業技能</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">專案作品</a></li>
+          <li class="nav-item"><a class="nav-link" href="#awards">證照</a></li>
+          <li class="nav-item"><a class="nav-link" href="#activities">活動</a></li>
+        </ul>
+        <!-- Right search -->
+        <div class="search-wrapper">
+          <i class="fa-solid fa-magnifying-glass" onclick="focusSearch()"></i>
+          <input id="searchInput" class="nav-search-input" type="search" placeholder="Search..." onkeyup="searchPage()">
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HERO ================= -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content text-center" data-aos="zoom-in">
+      <img src="images/me.jpg" class="hero-img img-fluid" alt="胡振惟個人照片">
+
+      <h1 class="hero-title mt-3">胡振惟</h1>
+      <p class="hero-subtitle">資訊管理學系學生</p>
+
+      <div class="mt-4">
+        <a href="#experience" class="btn btn-light hero-btn">實務經驗</a>
+        <a href="#projects" class="btn btn-light hero-btn me-2">專案作品</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= CONTENT ================= -->
+  <section id="about" class="section container" data-aos="fade-up">
+    <div class="section-card">
+      <h2>關於我 <span class="en-title">About Me</span></h2>
+      <p>您好！我是胡振惟，目前就讀於國立聯合大學資訊管理學系。在大學期間，我除了學習程式設計、資料庫、系統分析等專業課程外，也透過專題製作與自主學習持續精進自身的實務能力。
+        在專題與實作課程中，我曾參與系統開發與專案實作，內容涵蓋 Android 應用程式開發、藍牙通訊及影像辨識等領域，逐步累積程式設計、系統分析與系統整合的實務經驗，也讓我更熟悉從需求分析到系統完成的完整開發流程。
+        <br>我相信技術的價值在於解決問題，因此我持續學習新技術並挑戰不同類型的專案，不論是前端介面設計或是後端邏輯整合，都希望能提升系統的完整性與使用體驗。未來也期望能進一步接觸更多實務開發情境，強化我的專案開發能力與架構設計思維。
+        這個網站記錄了我的學習歷程、專案作品與成長軌跡，歡迎您一起探索我的資訊世界！
+      </p>
+      <hr class="about-divider">
+
+      <p class="en">
+        Hello! My name is Zhen-Wei Hu, and I am currently studying in the Dept. of Information Management at
+        National United University.
+
+        During my university studies, in addition to learning professional courses such as programming, databases, and
+        systems analysis, I have also continuously improved my practical abilities through project development and
+        self-directed learning.
+
+        In my project and practical courses, I have participated in system development and project implementation,
+        covering areas such as Android application development, Bluetooth communication, and image recognition. Through
+        these experiences, I have gradually built up practical skills in programming, systems analysis, and system
+        integration, and have become more familiar with the complete development process from requirement analysis to
+        system completion.
+
+        I believe that the value of technology lies in solving real-world problems. Therefore, I continue to learn new
+        technologies and challenge different types of projects. Whether it is front-end interface design or back-end
+        logic integration, I aim to improve system completeness and user experience.
+
+        In the future, I hope to further engage in more real-world development scenarios to strengthen my project
+        development capabilities and system architecture thinking.
+
+        This website records my learning journey, project works, and personal growth. You are welcome to explore my
+        world of information!
+      </p>
+    </div>
+  </section>
+
+  <section id="education" class="section container" data-aos="fade-up">
+    <div class="section-card">
+      <h2>教育背景 <span class="en-title">Education</span></h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+
+          <h5>2023 - 2026｜國立聯合大學</h5>
+          <p class="sub-title">資訊管理學系</p>
+
+          <p>
+            主修資訊系統開發與應用，涵蓋程式設計、資料庫管理與系統分析，
+            並結合商管知識培養跨領域整合與問題解決能力。
+          </p>
+
+          <div class="edu-block">
+            <h6>修習課程</h6>
+            <ul>
+              <li>程式設計</li>
+              <li>資料結構</li>
+              <li>供應鏈管理</li>
+              <li>系統分析與設計</li>
+              <li>多媒體程式設計</li>
+              <li>資料庫程式設計與系統管理</li>
+            </ul>
+          </div>
+
+          <div class="edu-block">
+            <h6>專題與實作經驗</h6>
+            <p>
+              影像辨識系統開發、藍牙通訊資料整合與 Android 應用程式設計。
+            </p>
+          </div>
+
+          <div class="badge-group">
+            <span class="badge">專題實作</span>
+            <span class="badge">實務導向</span>
+            <span class="badge">跨領域學習</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section container" data-aos="fade-up">
+    <div class="section-card">
+      <h2>實務經驗 <span class="en-title">Experience</span></h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <h5>2024 - 2026｜專題開發成員</h5>
+          <p class="project-title">以人工智慧及影像辨識為基礎之抽菸偵測系統</p>
+
+          <p>
+            主要負責 MediaPipe 影像處理模組，並協助模型整合與系統設計，參與 AI 影像辨識功能開發流程，強化影像分析與系統整合能力。
+          </p>
+
+          <div class="badges">
+            <span class="badge">MediaPipe</span>
+            <span class="badge ">影像處理</span>
+            <span class="badge ">系統整合</span>
+            <span class="badge ">AI 模型應用</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <h5>2025 - 2026｜產學合作專案</h5>
+          <p class="project-title">藍牙資料接收與系統整合應用</p>
+
+          <p>
+            獨立設計與開發App，實作藍牙資料串流與接收模組，並設計運作邏輯，優化資料傳輸穩定性與系統流程。
+          </p>
+
+          <div class="badges">
+            <span class="badge">藍牙通訊</span>
+            <span class="badge ">系統開發</span>
+            <span class="badge ">資料解析</span>
+            <span class="badge ">Android Studio</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section container" data-aos="fade-up">
+    <div class="section-card">
+      <h2>專業技能 <span class="en-title">Skills</span></h2>
+      <div class="row g-3 mt-3">
+
+        <div class="col-12 col-md-6">
+          <div class="skill-box">
+            <h5>程式設計</h5>
+            <div class="tags">
+              <span class="badge">Python</span>
+              <span class="badge">Java</span>
+              <span class="badge">PHP</span>
+              <span class="badge">C++</span>
+              <span class="badge">HTML / CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="skill-box">
+            <h5>資料庫與系統</h5>
+            <div class="tags">
+              <span class="badge">MySQL</span>
+              <span class="badge">資料庫設計</span>
+              <span class="badge">系統分析與設計</span>
+              <span class="badge">資料結構</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="skill-box">
+            <h5>AI 與應用開發</h5>
+            <div class="tags">
+              <span class="badge">MediaPipe</span>
+              <span class="badge">影像辨識</span>
+              <span class="badge">手/臉部辨識</span>
+              <span class="badge">Android 開發</span>
+              <span class="badge">藍牙通訊</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="skill-box">
+            <h5>分析與管理能力</h5>
+            <div class="tags">
+              <span class="badge">作業研究</span>
+              <span class="badge">決策分析</span>
+              <span class="badge">專案管理</span>
+              <span class="badge">資料分析</span>
+              <span class="badge">Excel 分析</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section container" data-aos="fade-up">
+    <div class="section-card">
+      <h2>專案作品 <span class="en-title">Projects</span></h2>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-6">
+          <div class="card project-card">
+            <img src="images/project1.png" class="card-img-top img-fluid" onclick="openLightbox(this)">
+            <div class="card-body">
+              <h5>抽菸偵測系統</h5>
+              <p>運用OpenCV + YOLOv8 + MediaPipe + EfficientNet-B0 技術，開發了一套能自動判斷抽菸行為的智慧監測系統，系統會將攝影機畫面即時串流至網頁端，
+                讓管理人員能直接監看結果。當偵測到抽菸行為時，會同步保存影像與時間資訊，並通知管理人員。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="card project-card">
+            <img src="images/project2.png" class="card-img-top img-fluid" onclick="openLightbox(this)">
+            <div class="card-body">
+              <h5>藍牙資料接收</h5>
+              <p>開發藍牙資料接收應用程式，透過 Bluetooth 技術與外部裝置進行無線通訊，即時接收並顯示設備傳送的資料。
+                系統可用於基本資料監控與傳輸應用，並作為行動裝置與物聯網設備整合的實作基礎。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="awards" class="section container" data-aos="fade-up">
+    <div class="section-card">
+      <h2>證照 <span class="en-title">Certifications</span></h2>
+      <div class="d-flex justify-content-between gap-4 mt-3 flex-wrap">
+
+        <!-- Card 1 -->
+        <div class="col-12 col-md-5">
+          <div class="card project-card h-100">
+            <div class="position-relative">
+              <img src="images/cert1.jpg" class="card-img-top img-fluid" onclick="openLightbox(this)">
+              <span class="badge year-badge position-absolute top-0 end-0 m-2">
+                2025
+              </span>
+            </div>
+            <div class="card-body">
+              <h5 class="mb-1">營運管理師</h5>
+              <p class="mb-0 text-muted">中華民國物流協會</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-md-5">
+          <div class="card project-card h-100">
+            <div class="position-relative">
+              <img src="images/cert2.png" class="card-img-top img-fluid" onclick="openLightbox(this)">
+              <span class="badge year-badge position-absolute top-0 end-0 m-2">
+                2026
+              </span>
+            </div>
+            <div class="card-body">
+              <h5 class="mb-1">IT資訊科技專家國際認證</h5>
+              <p class="mb-0 text-muted">Certiport ITS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="activities" class="section container" data-aos="fade-up">
+    <div class="section-card">
+      <h2>活動 <span class="en-title">Activities</span></h2>
+      <div class="row g-4 mt-2">
+
+        <div class="col-12 col-md-6">
+          <div class="card project-card">
+            <img src="images/activity1.jpg" class="card-img-top" onclick="openLightbox(this)">
+            <div class="card-body">
+              <h5>工業管理與科技產業學術研討會論文發表</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="card project-card">
+            <img src="images/activity2.jpg" class="card-img-top" onclick="openLightbox(this)">
+            <div class="card-body">
+              <h5>資訊管理111級專題競賽</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="footer-container">
+
+      <p class="footer-title">胡振惟 | Portfolio</p>
+
+      <p class="footer-sub">
+        National United University · Dept. of Information Management
+      </p>
+
+      <div class="footer-contact">
+        <p> Email：<a href="mailto:zhenweihu89@gmail.com">zhenweihu89@gmail.com</a></p>
+      </div>
+      <!-- Navigation links -->
+      <div class="footer-links">
+
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+
+      </div>
+
+      <p class="footer-copy">© 2026 胡振惟 | All Rights Reserved</p>
+
+    </div>
+  </footer>
+
+  <!-- ================= LIGHTBOX ================= -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img">
+  </div>
+
+  <!-- ================= SCRIPTS ================= -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+
+    function openLightbox(img) {
+      document.getElementById("lightbox").style.display = "flex";
+      document.getElementById("lightbox-img").src = img.src;
+    }
+
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+
+    function searchPage() {
+      const input = document.getElementById("searchInput").value.toLowerCase();
+
+      if (!input) return;
+
+      const sections = document.querySelectorAll("section");
+
+      for (let section of sections) {
+        const text = section.innerText.toLowerCase();
+
+        if (text.includes(input)) {
+          section.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+          break; // 只跳第一個找到的
+        }
+      }
+    }
+
+    function focusSearch() {
+      document.getElementById("searchInput").focus();
+    }
+  </script>
+</body>
+
+</html>
